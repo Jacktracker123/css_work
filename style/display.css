@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.block-element{
+    border: 2px solid red;
+    display: inline;
+
+}
+.inner-element{
+    border: 2px solid blue;
+    display: block;
+}

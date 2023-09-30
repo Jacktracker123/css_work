@@ -1,0 +1,9 @@
+*{
+    margin:0;
+    padding:0;
+}
+.stick{
+    position: sticky;
+    top:0;
+    background-color: greenyellow;
+}
