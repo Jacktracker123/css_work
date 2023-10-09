@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: yellow;
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+}
+
+@media only screen and (max-width:400px){
+    .container{
+        background-color: aqua;
+    }
+}
+
+@media only screen and (min-width:710px) and (max-width:1100px){
+    .container{
+        background-color: black;
+    }
+}
+
+@media only screen and (max-width:1101px){
+    .container{
+        background-color: forestgreen;
+    }
+}
