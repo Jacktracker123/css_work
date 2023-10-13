@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link-container{
+    width: 50vw;
+    height: 50vh;
+    background-color: yellow;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid brown;
+}
+
+a{
+    margin: 14px;
+}
+/* attribute selectors */
+a[target="_blank"]{      
+    color: blueviolet;
+}
+
+
+a[target="_self"]{
+    color: red;
+}
+
+.form-container{
+    background-color: aquamarine;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    border: 2px solid blue
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container form input{
+  margin: 10px;
+  padding: 8px;
+}
+
+input[type=text]{
+    border: 2px solid red;
+    background-color: yellow;
+}
+
+input[type=email]{
+    border: 2px solid blue;
+    background-color: aqua;
+}
+
+
+input[type=password]{
+    border: 2px solid green;
+    background-color: greenyellow;
+}
+
+
+input[type=submit]{
+    border: 2px solid purple;
+    background-color: violet;
+}
+
+.list-container{
+    background-color: pink;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(131, 33, 49);
+   
+}
+
+.list-container ul li{
+    margin: 10px;
+    color: red;
+}
+/* 
+.list-container ul li:nth-child(even){
+    color: blue;
+}
+
+
+.list-container ul li:nth-child(odd){
+    color: white;
+} */
+/* 
+
+.list-container ul li:nth-child(2n+0){
+    color: brown;
+} */
+
+/* 
+.list-container ul li:nth-child(3n+3){
+    color: blueviolet;
+} */
+
+
+.list-container ul li:nth-child(4n+2){
+    color: rgb(66, 20, 4);
+}
+
+
+.text-container{
+    width: 50vw;
+    height: 50vh;
+    background-color: greenyellow;
+    border: 2px solid green;
+    margin: auto;
+}
+
+.text-container ul li p{
+    color: blue;
+}
+/* If p is right inside the div */
+div > p{
+    color: red;
+}
+/* if p is right after div or p is the nxt sib of the div */
+div + p{
+    color: blueviolet;
+}
