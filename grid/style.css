@@ -10,7 +10,8 @@
     width: 80vw;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-areas: 'box-area box-area . . .' 'box-area box-area . . .';
     /* grid-template-rows: 200px 300px 400px; */
     border: 1px solid black;
     padding: 10px;
@@ -27,6 +28,7 @@
  background-color: aqua;
  font-size: 20px;
  font-weight: bolder;
+
  
 }
 
@@ -39,5 +41,47 @@
     /* grid-row: 1/5; */
     /* grid-column: 1/span 3; */
     /* grid-row: 1/span 4; */
-    grid-area: 1/3/span 5/span 2;
+    /* grid-area: 1/3/span 5/span 2; */
+    grid-area: box-area;
+}
+
+.boxs1{
+    grid-area: header;
+}
+
+.boxs2{
+    grid-area: main-area;
+}
+
+
+.boxs3{
+    grid-area: menu-area;
+}
+
+.boxs4{
+    grid-area: right-area;
+}
+
+.boxs5{
+    grid-area: footer-area;
+}
+
+
+.box-container{
+    width: 80vw;
+    height: 80vh;
+    background-color: lightblue;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'main-area menu-area menu-area menu-area right-area right-area' 'main-area footer-area footer-area footer-area footer-area footer-area';
+    gap: 20px 20px;
+    padding: 10px;
+}
+
+.boxs{
+    background-color: yellow;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
